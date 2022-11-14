@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  h1 List of tasks
+  
+  table#task_table
+    thead
+      tr
+        th Task
+        th Done
+        th Actions
+    tbody    
+
+      each val, index in data
+        tr(id= 'row-' + val['id'])
+          td= val['Task']
+          td.center_cell
+            if val['Done']
+              input.check(
+                type='checkbox'
+                value= val['id']
+                checked
+              )
+            else
+              input.check(
+                type='checkbox'
+                value= val['id']
+              )
+          td.center_cell
+            button.button.delete_button(
+                value= val['id']
+            ) Delete
+  
+  p
+    input.task_field(
+        type="text"
+        name=""
+    )
+    button.button.add_button Add task
+
+  p Done by Adolfo Acosta Castro &#127844;
+
+  div.alert.success
+    span.closebtn &times;
+    strong.res_message Message
+          
+    

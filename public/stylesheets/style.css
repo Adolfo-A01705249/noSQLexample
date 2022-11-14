@@ -1,0 +1,129 @@
+html {
+  background-color: #fedbe4;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+table, th, td {
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  border:1px solid #bec8d1;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  background-color: #d7325a;
+  color: white;
+  font-weight: bold;
+}
+
+td.center_cell {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, p {
+  text-align: center;
+  color: #373b3e;
+}
+
+input.check {
+  width: 20px;
+  height: 20px;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin-bottom: 15px;
+  display: inline;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.add_button {
+  border: 2px solid #d7325a;
+  background-color: #d7325a;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.add_button:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #d7325a;
+}
+
+.task_field {
+  font-size: 20px;
+  margin-right: 10px;
+}
